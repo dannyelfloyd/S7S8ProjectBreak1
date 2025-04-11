@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html {
     height: 100%;
@@ -19,8 +20,19 @@ body {
     background-size: cover;
     background-blend-mode: darken;
 }
-header {
+header, footer {
     background-color: rgba(255, 255, 255, 0.582);
+    display: flex;
+    justify-content: center;
+
+
+    a {
+        text-decoration: none;
+        color: green;
+    }
+    .material-symbols-rounded {
+        font-size: 40px;
+    }
 }
 main {
     display: flex;
@@ -30,7 +42,6 @@ main {
     padding-bottom: 150px;
 }
 footer {
-    background-color: rgba(255, 255, 255, 0.582);
     margin-top: auto;
 }
 /*PAGE1: DATE&TIME*/
