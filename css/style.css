@@ -1,9 +1,17 @@
 body {
-    background-color: blue;
+    background-color: green;
 }
 
 #watch, #calendar {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#linksDiv {
+    display: flex;
+    flex-direction: column;
+    a {
+        color: white;
+    }
 }
