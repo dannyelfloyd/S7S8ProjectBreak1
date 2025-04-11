@@ -6,4 +6,3 @@ function changeBG() {
     document.body.style.backgroundImage = `url(./img/index/${randomNumber}.jpg)`;
 }
 setInterval(changeBG, 4000);
-changeBG();

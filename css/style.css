@@ -4,22 +4,33 @@
 }
 html {
     height: 100%;
+    font-family: system-ui;
 }
 body {
-    background-color: #08a102;
     display: flex;
     flex-direction: column;
     min-height: 100%;
+
+    background-color: rgba(12, 134, 12, 0.432);
+    background-image: url(../img/0.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: darken;
 }
 header {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.582);
 }
 main {
     display: flex;
     justify-content: center;
+
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 footer {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.582);
     margin-top: auto;
 }
 /*PAGE1: DATE&TIME*/
