@@ -3,28 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <!--  <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/parallax.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded"/>
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="./page1-date&time.html">
-                <span class="material-symbols-rounded">schedule</span>
-            </a>
-            <a href="./page2-password.html">
-                <span class="material-symbols-rounded">password</span>
-            </a>
-            <a href="./page3-links.html">
-                <span class="material-symbols-rounded">link</span>
-            </a>
-            <a href="./page4-weather.html">
-                <span class="material-symbols-rounded">partly_cloudy_day</span>
-            </a>
-        </nav>
-    </header>
-    <main></main>
+    <div class="parallax">
+        <header class="primary-header">
+            <nav class="primary-nav">
+                <ul role="list">
+                <li>
+                    <a href="./page0-dashboard.html">
+                        <span class="material-symbols-rounded">
+                            dashboard
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./page1-date&time.html">
+                        <span class="material-symbols-rounded">schedule</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./page2-password.html">
+                        <span class="material-symbols-rounded">password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./page3-links.html">
+                        <span class="material-symbols-rounded">link</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./page4-weather.html">
+                        <span class="material-symbols-rounded">partly_cloudy_day</span>
+                    </a> 
+                </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="hero">
+            <h1 class="hero__title">
+                <span>Sprint 7 y Sprint 8</span> Project Break 1
+            </h1>
+        </div>
+  
+        <img class="parallax__bg" src="assets/bg.jpg" alt="" />
+        <img class="parallax__dust" src="assets/dust.webp" alt="" />
+        <img
+          class="parallax__foreground-back"
+          src="assets/foreground-back.webp"
+          alt=""
+        />
+        <img
+          class="parallax__foreground-front"
+          src="assets/foreground-front.webp"
+          alt=""
+        />
+        <img class="parallax__jax" src="assets/jax.webp" alt="" />
+        <img class="parallax__luna" src="assets/luna.webp" alt="" />
+        <img class="parallax__manny" src="assets/manny.webp" alt="" />
+        <img class="parallax__rays" src="assets/rays.webp" alt="" />
+    </div>
+    <main class="main-content">
+        <h1>ReadMe (Instrutions)</h1>
+        <div class="intro">
+            <p>Bienvenido al primer PROJECT BREAK. Después de varias semanas de duro trabajo vamos a poner en práctica todo lo que has aprendido.
+                Vas a crear un Dasboard en el que podrás ver 4 elementos:
+                <p>- Un reloj digital 24h + Fecha</p>
+                <p>- Una estación meteorológica</p>
+                <p>- Un creador de contraseñas seguras</p>
+                <p>- Un listado de links interesántes</p>
+                <p>(Además de imagenes random de fondo.)</p>
+    
+                Cada uno de ellos será independiente entre sí. Se generará una página propia y un script propio. Las CSS también pueden ser propias o generales.
+                
+                Una vez tengas los cuatro proyectos hechos los uniremos en el `index.html` y funcionarán a la vez.
+                
+                Desde el index se podrá acceder a cada página, y habrá cambios si está dentro de la página o en el `index.html`.
+                
+                Aquí puedes ver el ejemplo:
+                https://carlosdiazgirol.github.io/dashboard/
+                
+                Es un ejemplo de como lo puedes hacer pero puedes dar rienda suelta tu imaginación, siempre y cuando cumplas con los objetivos. Simepre puedes añadir más funcionalidades si lo deseas.
+                
+                Una vez tengas el proyecto finalizado, también puede ser antes, lo subiras a github pages para poder verlo en internet. Para poder subir nuestro proyecto a github pages previamente lo tendremos que tener en nuestro repositorio. Una vez ahí iremos a `settings` (está en el menú de cabecera) y dentro aparecerá en el menú lateral `pages`. Clicka y al entrar solo tienes que seleccionar la `branch`(rama) `main`. Y pulsaremos `SAVE`.
+                Esperaremos un par de minutos, refrescaremos esa página y nos dará una URL. Ahí podras ver tu proyecto en internet.
+                
+                
+                Vamos a ver que hay que hacer en cada uno de los proyectos:
+            </p>
+        </div>
+        <div class="wacht">
+            <h2>Reloj digital 24h + Fecha:</h2>
+            <h3>¿Como funciona?</h3>
+            <p>...</p>
+            <h3>¿Qué usaremos?</h3>
+            <p>...</p>
+            <h3>PISTAS PISTAS Y CONSEJOS</h3>
+            <p>...</p>
+        </div>
+        <div class="pwd">
+            <h2>Generador de contraseñas seguras:</h2>
+        </div>
+        <div class="weather">
+            <h2>Estación meteorológica</h2>
+        </div>
+        <div class="bckImg">
+            <h2>Imagenes random background:</h2>
+        </div>
+    </main>
     <footer></footer>
     <script src="./js/background.js"></script>
 </body>

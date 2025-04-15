@@ -51,6 +51,8 @@ main {
 footer {
     margin-top: auto;
 }
+/*PAGE0: INDEX*/
+
 /*PAGE1: DATE&TIME*/
     .digitalClock {
         display: flex;
