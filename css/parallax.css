@@ -72,7 +72,7 @@
   .main-content {
     position: relative;
     /* z-index: 1; */
-    background: hsl(238, 100%, 6%);
+    background: #001f00;
     padding-block: 6rem;
   }
   

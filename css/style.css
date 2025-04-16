@@ -20,7 +20,7 @@ body {
     min-height: 100%;
 
     background-color: rgba(12, 134, 12, 0.432);
-    background-image: url(../img/0.jpg);
+    /*background-image: url(../img/0.jpg);*/
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -51,8 +51,47 @@ main {
 footer {
     margin-top: auto;
 }
-/*PAGE0: INDEX*/
+/*INDEX (PARALLAX)*/
+.indexBody {
+    
+    .menu ul{
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+    }
+    .parallax {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        overflow-y: hidden;
+        position: relative;
 
+        img {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        #layer3 {
+            display: none;
+        }
+        h2 {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 14vw;
+        }
+    }
+    .parallax::-webkit-scrollbar {
+        display: none;
+      }
+    .container {
+        padding: 6rem;
+        background-color: #001f00;
+        color: white;
+    }
+}
 /*PAGE1: DATE&TIME*/
     .digitalClock {
         display: flex;
