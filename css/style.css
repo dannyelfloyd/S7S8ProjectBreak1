@@ -19,7 +19,7 @@ body {
     
     min-height: 100%;
 
-    background-color: rgba(12, 134, 12, 0.432);
+    background-color: rgba(0, 0, 0, 0.432);
     /*background-image: url(../img/0.jpg);*/
     background-repeat: no-repeat;
     background-position: center;
@@ -73,9 +73,6 @@ footer {
             width: 100%;
             bottom: 0;
         }
-        #layer3 {
-            display: none;
-        }
         h2 {
             position: absolute;
             top: 50%;
@@ -90,6 +87,14 @@ footer {
         padding: 6rem;
         background-color: #001f00;
         color: white;
+        display: flex;
+        flex-direction: column;
+
+        .content {
+            display: flex;
+            border: solid;
+            align-items: center;
+        }
     }
 }
 /*PAGE1: DATE&TIME*/
