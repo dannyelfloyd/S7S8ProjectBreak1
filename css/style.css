@@ -20,7 +20,7 @@ body {
     min-height: 100%;
 
     background-color: rgba(0, 0, 0, 0.432);
-    /*background-image: url(../img/0.jpg);*/
+    background-image: url(../img/0.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -28,9 +28,14 @@ body {
     background-blend-mode: darken;
 }
 header, footer {
-    background-color: rgba(255, 255, 255, 0.582);
     display: flex;
     justify-content: center;
+    
+    background: linear-gradient(
+        to top, rgba(0, 0, 0, 0.15),
+        rgba(197, 98, 98, 0.15)
+    );
+    backdrop-filter: blur(100px);
 
 
     a {
@@ -52,58 +57,65 @@ footer {
     margin-top: auto;
 }
 /*INDEX (PARALLAX)*/
-.indexBody {
-    
-    .menu ul{
-        display: flex;
-        gap: 2rem;
-        list-style: none;
-    }
-    .parallax {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .indexBody {
         
-        overflow-y: hidden;
-        position: relative;
-
-        img {
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-        }
-        h2 {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 14vw;
-        }
-    }
-    .parallax::-webkit-scrollbar {
-        display: none;
-      }
-    .container {
-        padding: 6rem;
-        background-color: #001f00;
-        color: white;
-        display: flex;
-        flex-direction: column;
-
-        .content {
+        .menu ul{
             display: flex;
-            border: solid;
+            gap: 2rem;
+            list-style: none;
+        }
+        .parallax {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
             align-items: center;
+            
+            overflow-y: hidden;
+            position: relative;
+
+            img {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+            }
+            h2 {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 14vw;
+            }
+        }
+        .parallax::-webkit-scrollbar {
+            display: none;
+        }
+        .container {
+            padding: 6rem;
+            background-color: #001f00;
+            color: white;
+            display: flex;
+            flex-direction: column;
+
+            .content {
+                display: flex;
+                border: solid;
+                align-items: center;
+                gap: 2vw;
+                padding: 2vw;
+            }
         }
     }
-}
 /*PAGE1: DATE&TIME*/
     .digitalClock {
         display: flex;
         flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.603);
         padding: 30px;
         border-radius: 15px;
+        background: linear-gradient(
+            to top, rgba(0, 0, 0, 0.15),
+            rgba(197, 98, 98, 0.15)
+        );
+        backdrop-filter: blur(100px);
+        width: 300px;
 
         #watch, #calendar, #message {
             display: flex;
@@ -125,9 +137,14 @@ footer {
     .pwGenerator {
         display: flex;
         flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.603);
         padding: 30px;
         border-radius: 15px; 
+        background: linear-gradient(
+            to top, rgba(0, 0, 0, 0.15),
+            rgba(197, 98, 98, 0.15)
+        );
+        backdrop-filter: blur(100px);
+        width: 300px;
 
         .pwInputs {
             display: flex;
@@ -139,13 +156,25 @@ footer {
             }
             input {
                 text-align: center;
+                align-self: center;
+               
+                width: 30%;
+               
+                border-radius: 99px;
+                border: 3px solid transparent;
+                background: rgba(255, 255, 255, 0.15);
+                outline: none;
+                
+                transition: 0.25s border;
+                
             }
             button {
-                background-color: #0371d8;
+                background: none;
                 border: none;
-                color: #f4f4f4;
-                padding: 10px;
-                border-radius: 5px;
+                margin-top: 2vw;
+                span {
+                    font-size: 6vh;
+                }
             }
         }
         .pwResult {
@@ -157,28 +186,39 @@ footer {
     .page3Links {
         display: flex;
         flex-direction: column;
+        padding: 0;
         
         h1 {
-            margin-top: 100px;
-            margin-bottom: 20px;
             font-size: 3rem;
             font-weight: 800;
             text-align: center;
         }
+    }
+    .bookmarksApp {
+        align-self: center;
+        background: linear-gradient(
+        to top, rgba(0, 0, 0, 0.15),
+        rgba(197, 98, 98, 0.15)
+        );
+        backdrop-filter: blur(100px);
+        width: 300px;
+        padding: 20px;
+        border-radius: 15px;
+
         .linksInput {
-            border: solid red;
             display: flex;
             flex-direction: column;
             position: relative;
+            gap: 2vh;
             
     
-            #tagInput {
+            #tagInput, #urlInput {
                 text-align: center;
                 box-sizing: border-box;
                 padding: 12px 20px;
                 width: 100%;
                 background: none;
-                border: 2px solid green;
+                border: 2px solid rgba(255, 255, 255, 0.815);
                 border-radius: 1000px;
                 font: inherit;
                 color: white;
@@ -187,36 +227,46 @@ footer {
             #tagInput:focus {
                 outline: none;
             }
-            #urlInput {
-                text-align: center;
-            }
             #btnAdd {
                 text-align: center;
-                position: absolute;
-                top: 0;
-                right: 0;
-
-                background-color: lime;
-                height: 100%;
-                padding: 0 30px;
+                background: none;
                 border: none;
-                border-radius: 1000px;
-                font: inherit;
-                font-weight: 600;
-                color: black;
-                cursor: pointer;
-
             }
         }
         .linksSaved{
-            border: solid blue;
             display: flex;
             
             #linksDiv {
                 display: flex;
-                flex-direction: column;
-                a {
-                    color: white;
+                flex-wrap: wrap;
+                gap: 2vw;
+                padding: 2vw;
+
+                li {
+                    list-style: none;
+                    background-color: #ffffffde;
+                    border-radius: 100px;
+                    border: none;
+                    padding: 1vw;
+                    align-items: center;
+                    display: flex;
+                    position: relative;
+                    
+                    a {
+                        color: rgb(0, 0, 0);
+                        text-decoration: none;
+                    }
+                    .btnDelete {
+                        background-color: #ff0505;
+                        border-radius: 50%;
+                        border: none;
+                        height: 25px;
+                        width: 25px;
+                        position: absolute;
+                        margin-bottom: 40px;
+                        right: -10px;
+                        font-size: 10px;
+                    }
                 }
             }
         }
